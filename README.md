@@ -1,3 +1,1 @@
-# Python
-
-The "Beginner" folder contains some useful codes for Python beginners like me.
+This repo is a collection of my codings that are relevant to different aspects of data science and machine learning.

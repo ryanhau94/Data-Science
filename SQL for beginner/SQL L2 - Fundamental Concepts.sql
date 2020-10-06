@@ -21,7 +21,7 @@ INSERT INTO test DEFAULT VALUES;
 INSERT INTO test (a, b, c) SELECT id, name, description FROM item;
 
 -- delete all columns where a=3
--- once deleted, the data cannot be easily recovered
+-- Be careful that once deleted, the data cannot be easily recovered
 DELETE FROM test WHERE a = 3;
 
 -- NULL is lack of value, so it is incorrect to write down the following expression

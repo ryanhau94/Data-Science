@@ -45,7 +45,57 @@ INSERT INTO right VALUES ( 11, 'right 14' );
 SELECT * FROM left;
 SELECT * FROM right;
 
-SELECT l.description AS left, r.description AS right
+-- inner join
+-- ON gives the condition(s) for JOIN
+SELECT l.description AS Left, r.description AS Right
   FROM left AS l
   JOIN right AS r ON l.id = r.id
   ;
+
+-- left join or outer join
+-- all columns from left remains, even the condition is not met
+SELECT l.description AS Left, r.description AS Right
+  FROM left AS l
+  LEFT JOIN right AS r ON l.id = r.id
+  ;
+
+-- restore the data base
+DROP TABLE left;
+DROP TABLE right;
+
+-- insert a line for later convenience
+INSERT INTO customer (name) VALUES ('Jane Doe');
+
+-- get sale information from given tables
+SELECT s.id AS sale, s.date, i.name, i.description, s.price
+    FROM sale AS s
+    JOIN item AS i ON s.item_id = i.id
+    ;
+    
+-- relating three tables
+SELECT c.name AS Name, c.zip AS Zip, i.name AS Item, s.quantity AS Quant, s.price AS Price
+    FROM sale AS s
+    Join item AS i ON s.item_id = i.id
+    Join customer AS C ON s.customer_id = c.id
+    WHERE s.quantity > 1
+    ORDER by Name, Item
+    ;
+    
+-- the order of inner join does not matter
+SELECT c.name AS Name, c.zip AS Zip, i.name AS Item, s.quantity AS Quant, s.price AS Price
+    FROM customer AS c
+    Join sale AS s ON s.customer_id = c.id
+    Join item AS i ON s.item_id = i.id
+    ORDER by Name, Item
+    ;
+    
+-- out join returns also customers who didn't but anything
+SELECT c.name AS Name, c.zip AS Zip, i.name AS Item, s.quantity AS Quant, s.price AS Price
+    FROM customer AS c
+    LEFT Join sale AS s ON s.customer_id = c.id
+    LEFT Join item AS i ON s.item_id = i.id
+    ORDER by Name, Item
+    ;
+
+-- restore the table
+DELETE FROM customer WHERE id = 4;

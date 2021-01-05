@@ -1,0 +1,100 @@
+<!--
+  - <p> - opening tags; </p> closing tags
+  - Element: <p> This is a paragraph. </p> (Not all elements have closing tags)
+  - Nesting HTML elements form the DOM (Document Object Model) tree.
+-->
+
+
+<!--
+Six tags for headlines, <hi>, i = [1, 6].
+
+<strong> Bold for importance, seriousness and/or urgency; <b> marked so that it has a bold style.
+
+<i> Visual-only italics; <em> puts emphasis on something.
+-->
+
+<article>
+  <h1> This is a headline. </h1>
+  <p> This is a <em>paragraph</em>. </p>
+</article>
+
+<h1><strong>Warning!</strong> Do not be late.</h1>
+
+<!--
+HTML lists: unordered list <ul>, ordered list <ol> and definition list <dl>
+
+<li> list item
+<dt> definition term and <dd> definition description
+-->
+
+<ul>
+  <li>1</li>
+  <li>2</li>
+</ul>
+
+
+<ol>
+  <li>a</li>
+  <li>b</li>
+</ol>
+
+<!--
+<blockquote> and <cite> for block quote
+<q> for inline quote
+-->
+
+<cite>— Someone</cite>
+
+<!--
+<time datetime="2025-05-08">May 8, 2025</time>
+ 
+The time inside the attribute needs to be in a specific format: YYYY-MM-DD hh-mm-ss.ddd+-hh:mm
+-->
+
+<p>
+  The concert starts at <time datetime="20:00">20:00</time> and you'll be able to enjoy the band for at least <time datetime="PT2H30M">2h 30m</time>.
+</p>
+
+<!--
+<code> inline code display
+HTML entities for HTML syntax in page: &lt <, &gt >
+
+<br> break line (no closing tag)
+<pre> respects indentation and space
+-->
+
+<pre>
+  <code>
+  &lt;ul&gt;
+    &lt;li&gt;a&lt;/li&gt;
+    &lt;li&gt;b&lt;/li&gt;
+    &lt;li&gt;c&lt;/li&gt;
+  &lt;/ul&gt;
+  
+  
+  ul {
+     color: teal;
+  }
+  li {
+     list-style-type: square;
+  }
+  </code>
+</pre>
+
+<p>
+  We can write <code>{color:green;}</code> in our CSS, and it will apply to anything marked up as an <code>&lt;H4&gt;</code> element.
+</p>
+
+<!--
+<sub> for subscript
+<sup> for superscript
+MathML for specific mathematical formula
+
+<small> to convert something that has vey little prominence
+-->
+
+<p>H<sub>2</sub>O</p>
+
+<p>A footnote.<sup>2</sup></p>
+
+<small>© 2020 xyz Company</small> 

@@ -1,0 +1,44 @@
+/*
+https://www.w3.org/standards/webdesign/htmlcss.html
+https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Values_and_Units
+*/
+
+/*longhand*/
+div {
+    padding-top: 10px;
+    padding-right: 5px;
+    padding-bottom: 10px;
+    padding-left: 5px;
+}
+
+/*shorthand*/
+div {
+    padding: 10px 5px;
+}
+
+/* CSS function values
+Rotate an element
+    transform: rotate();
+
+Calculate a computed value
+    width: calc();
+
+Embed an image to the background of an element
+    background-image: url();
+*/
+
+/* Colors
+https://colours.neilorangepeel.com
+https://coolors.co
+
+#000000 Black; #ffffff white; #ffa500 orange; #ffc0cb pink; #808080 grey
+rgb(), input: 3 comma-separated numbers between 0-255 or 0%-100%
+rgba(), the last input (0-1 or 0%-100%) controls the opacity
+
+hsl() or hsla()
+*/
+
+/*Universal selector, apply to all*/
+* {
+    border: 1px solid black;
+}

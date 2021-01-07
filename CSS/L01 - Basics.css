@@ -1,0 +1,33 @@
+/* CSS controls how the web pages look.
+
+HTML: Structure of content and semantic meaning
+CSS: Appearance and styling
+*/
+
+/* Referencing CSS: external CSS
+<head>
+    <link rel="stylesheet" href="PATH_TO_CSS">
+</head>
+For HTML4 and older: <link rel="stylesheet" href="PATH_TO_CSS" type="text/css">
+
+<head>
+    <style> @import url("css/style.css") </style>
+</head>
+*/
+
+/*import may slow down page respond*/
+@import url('css-project/css/styles.css');
+@import url('/CSS/css-project/css/styles.css');
+
+/* Referencing CSS: inline CSS
+<h1 style="color:green"> Heading </h1>
+
+Inline also overrides other CSS style rules.
+Avoid using this as it can be hard to manage.
+*/
+
+/* Referencing CSS: internal CSS
+CSS is added in html file using <style> tag.
+
+Good for short CSS that only applies to one page.
+*/

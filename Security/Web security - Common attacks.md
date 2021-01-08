@@ -40,3 +40,4 @@
   - Large files or frequent upload. Wrong file type. Malware.
 
 - ## Denial of service (DOS)
+  - Flooding or crashing.

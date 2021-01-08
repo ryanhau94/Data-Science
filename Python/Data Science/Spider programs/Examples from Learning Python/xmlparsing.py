@@ -6,7 +6,7 @@ import xml.dom.minidom
 
 def main():
   # use the parse() function to load and parse an XML file
-  doc = xml.dom.minidom.parse("samplexml.xml")
+  doc = xml.dom.minidom.parse(os.path.join(__location__, "samplexml.xml"))
   
   # print out the document node and the name of the first child tag
   print (doc.nodeName)
@@ -29,5 +29,5 @@ def main():
     print (skill.getAttribute("name"))
         
 if __name__ == "__main__":
-  main();
+  main()
 

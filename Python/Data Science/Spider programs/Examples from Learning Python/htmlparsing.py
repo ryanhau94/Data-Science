@@ -5,6 +5,7 @@
 # import the HTMLParser module
 # in Python 3 you need to import from html.parser
 from html.parser import HTMLParser
+import os
 
 metacount = 0
 
@@ -51,7 +52,7 @@ def main():
   parser = MyHTMLParser()
     
   # open the sample HTML file and read it
-  f = open("samplehtml.html")
+  f = open(os.path.join(__location__, 'samplehtml.html'))
   if f.mode == "r":
     contents = f.read() # read the entire file
     parser.feed(contents)
@@ -59,5 +60,5 @@ def main():
   print ("%d meta tags encountered" % metacount)
 
 if __name__ == "__main__":
-  main();
+  main()
   

@@ -9,5 +9,5 @@ The following datebase(s) are exercise files for course [Learning SQL Programmin
 - results.db
 
 The results database contains:
-- People table - quiz participants (name, location, points, team, etc.), total a thousand-ish. This table is generated using Mockaroo or you can generate it through _quizresults.sql_.
+- People table - quiz participants (name, location, points, team, etc.), total a thousand-ish. This table is generated using Mockaroo or you can generate it through _quizresults.sql_
 - States table - US states and census regions (from US Census website)

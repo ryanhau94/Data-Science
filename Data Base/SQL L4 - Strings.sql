@@ -43,3 +43,9 @@ SELECT RTRIM(' . string.  ..', '.');
 --fold case
 SELECT LOWER('StRing');
 SELECT UPPER('stRINg');
+
+-- we can use LIKE to match strings
+-- exmaple with result.db
+SELECT last_name, first_name, state
+    FROM people
+    WHERE quiz_points >= 50 AND state LIKE 'C%';

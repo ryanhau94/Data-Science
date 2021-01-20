@@ -3,6 +3,9 @@ SOL Essential Training
 world.db
 */
 
+-- Print strings regardless of what db you have
+SELECT 'Hello, World';
+
 -- Capitalize key word helps readability
 -- When select column, the orders will be reflected in the results
 SELECT Name, LifeExpectancy AS "LE"
